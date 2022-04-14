@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 })
 
 
-
+let letterSelector = document.querySelector('#breed-dropdown')
 
 function getDogPictures(){
     fetch("https://dog.ceo/api/breeds/image/random/4")
@@ -40,14 +40,15 @@ function printBreedList(){
 
 
 
-filterByFirstLetter()
+// filterByFirstLetter()
 
-function filterByFirstLetter(){
-    const letterSelector = document.getElementById('breed-dropdown')
-    let chosenLetter = letterSelector.target.value
-    letterSelector.addEventListener('change', (e)=>{
-        if (chosenLetter !== (breed[0])){
-           document.getElementById('dog-breeds').removeChild(imgElement)
-           }})}
+// function filterByFirstLetter(){
+//     // let letterSelector = document.querySelector('#breed-dropdown').addEventListener('change', (e)=>{
+//         if (e.target.value !== (breed[0])){
+//            document.querySelector('#dog-breeds').removeChild(imgElement)
+//            }})}
+    // let chosenLetter = letterSelector.target.value
+    // console.log(letterSelector)
+    // letterSelector
 
    
